@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: Te+nMEqtJFZdgZl+2eL3xU+lJ2gIC2YbZVV79by0FdpJwHPP2CGIGnddB0sWXkW1hJLcIt4DmSaazqkeKGCwE69TrMfVHLZ0vngezLYYCz8rjhyIJ1yW0iiX873aOID9e2DrqmqmiWLK31NNDc9trUx38WlYz65ODL0qPgoVk+vD1GtqUJ7qAP4/4gQzr3C7KEhxSzWgJny6WYkFt1OT7r3S6aRbaTeuH1pL9qiJaPrBL/cpkvx1mFmC0/vHRCAEyTdC8QzVOHovWgDDEKEJWytagtHQhwLTe3IBUx3Dy25NtZxuzZ4xpNz6C27lGMJhr52uUuCXKl72taYWhe5RDEATD9C4gYHTZnM3DWW0PbfgNbO2gPHuls92kiK/Bxu0VOYGt9+VZ+BbPiWQpVDeLHHA7Arb/GNqcIhnBBEPgI6uHfk4keSnrGfZwVQw0+FCSIuNd6TlvQoVjrTmLDtn5NwsK/eyBCoquGXepAqbPRApGLFe93xykFCkFPYYiF3H0BsaBITrJWOhlCXXj6NchyX4Jz8pWfDUeiHAJXo1XnvQMa/wTQGX4m+r/przxxHDMqE2mAvwGWF4ffCLX+HfEJBUmf1Dp7pEb4ZbGi7lqT1YLDasT7A3jvd1rC9a2a9HRF6Lm+uB3dFqkC9bOMblhkJXTYvNvlZrgZWjCYmUbos=
+  app: obscure-tor-85430
+  on:
+    repo: schamblee/node-restaurants-app-mongoose
+    branch: feature/with-tests
